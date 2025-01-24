@@ -2,32 +2,68 @@
 
 # Overview
 
-A comprehensive sentiment analysis project using Python and NLP techniques to classify sentiment in Amazon food reviews, achieving 80% accuracy across validation and test datasets.
+Advanced sentiment analysis project using machine learning to classify sentiments in Amazon food reviews.
 
 # Key Features
 
--**Natural Language Processing (NLP) analysis**
+-**Multi-class sentiment classification (Positive, Neutral, Negative)**
 
--**Text preprocessing and tokenization**
+-**SMOTE for handling class imbalance**
 
--**Sentiment classification**
+-**TF-IDF vectorization**
 
--**Data visualization dashboard**
+-**Logistic Regression with hyperparameter tuning**
 
--**Handling class imbalance challenges**
+-**Comprehensive evaluation metrics**
+
 
 # Technical Specifications
+
+-Python
+
+-Scikit-learn
+
+-Pandas
+
+-NumPy
+
+-Imbalanced-learn (SMOTE)
+
+-Matplotlib
+
+-Seaborn
 
 **Methodology**
 ---------------
 
--**Libraries:** NLTK, TextBlob
+-**Data Preprocessing**
 
--Preprocessing techniques
+* Sentiment labeling based on review scores
+  
+* Train-validation-test split
 
--Machine learning sentiment classification
 
--Visualization with Matplotlib and Seaborn
+-**Feature Extraction**
+
+* TF-IDF Vectorization
+
+-**Class Balancing**
+
+* SMOTE oversampling technique
+
+# Model Training
+
+-Logistic Regression
+
+-GridSearchCV for hyperparameter optimization
+
+# Model Evaluation
+
+-Classification report
+
+-Confusion matrix
+
+-Visualization
 
 **Performance Metrics**
 ----------------------
@@ -38,13 +74,16 @@ A comprehensive sentiment analysis project using Python and NLP techniques to cl
 
 -Robust handling of class imbalance
 
+-Validated using F1-weighted scoring
+
+-Comprehensive classification report
+
+-Confusion matrix visualization
+
 # Installation
 
-      pip install nltk
-      pip install textblob
-      pip install matplotlib
-      pip install seaborn
-
+      pip install pandas numpy scikit-learn imbalanced-learn matplotlib seaborn
+    
 # Workflow
 
 -Data Collection
@@ -57,7 +96,11 @@ A comprehensive sentiment analysis project using Python and NLP techniques to cl
 
 -Sentiment Classification
 
--Visualization
+# Visualization
+
+-Sentiment distribution plot
+
+-Confusion matrix heatmap
 
 # Future Enhancements
 
@@ -65,18 +108,5 @@ A comprehensive sentiment analysis project using Python and NLP techniques to cl
 
 -Deep learning integration
 
--Real-time sentiment analysis API
+-More sophisticated feature engineering
 
-# Dependencies
-
--Python 3.7+
-
--NLTK
-
--TextBlob
-
--Pandas
-
--Matplotlib
-
--Seaborn
